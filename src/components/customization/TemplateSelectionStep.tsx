@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { ChevronLeft, ChevronRight, Ruler, Square, Circle, Rectangle } from "lucide-react";
+import { ChevronLeft, ChevronRight, Ruler, Square, Circle, RectangleHorizontal } from "lucide-react";
 
 interface TemplateSelectionStepProps {
   selectedTemplate: any;
@@ -39,7 +38,7 @@ const presetTemplates = [
     name: "矩形 (40cm x 20cm)",
     type: "基础形状",
     dimensions: { length: 40, width: 20 },
-    icon: Rectangle,
+    icon: RectangleHorizontal,
     description: "适合横向图案布局"
   },
   {
@@ -55,7 +54,7 @@ const presetTemplates = [
     name: "手袋翻盖 (15cm x 12cm)",
     type: "产品模板",
     dimensions: { length: 15, width: 12 },
-    icon: Rectangle,
+    icon: RectangleHorizontal,
     description: "手袋翻盖标准尺寸"
   },
   {
@@ -63,7 +62,7 @@ const presetTemplates = [
     name: "品牌皮标 (5cm x 3cm)",
     type: "产品模板",
     dimensions: { length: 5, width: 3 },
-    icon: Rectangle,
+    icon: RectangleHorizontal,
     description: "品牌标识专用小标签"
   }
 ];
